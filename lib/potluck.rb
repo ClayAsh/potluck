@@ -14,6 +14,14 @@ class Potluck
     @dishes << new_dish
   end
 # binding.pry
+  # def get_all_from_category(category)
+  #   if @category == category
+  # p dish
+  #
+  #
+  # end
+
 end
 
 potluck = Potluck.new("7-13-18")
+# potluck.add_dish(couscous_salad)
