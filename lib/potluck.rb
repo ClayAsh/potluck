@@ -13,15 +13,12 @@ class Potluck
   def add_dish(new_dish)
     @dishes << new_dish
   end
-# binding.pry
-  # def get_all_from_category(category)
-  #   if @category == category
-  # p dish
-  #
-  #
-  # end
 
+  def get_all_from_category(category)
+    same_cat =
+    @dishes.find_all do |dish|
+      dish.category == category
+    end
+    return same_cat
+  end
 end
-
-potluck = Potluck.new("7-13-18")
-# potluck.add_dish(couscous_salad)
